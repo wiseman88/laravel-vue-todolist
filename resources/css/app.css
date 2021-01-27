@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+@layer components {
+  .overlay {
+    @apply fixed inset-0 w-screen h-screen;
+  }
+
+  .overlay-absolute {
+    @apply absolute inset-0 w-full h-full;
+  }
+
+  .success {
+    @apply bg-green-200 text-green-700 border-green-700;
+  }
+
+  .error {
+    @apply bg-red-200 text-red-700 border-red-700;
+  }
+}
+
